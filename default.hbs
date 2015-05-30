@@ -26,6 +26,15 @@
     {{navigation}}
 
     <div class="site-wrapper">
+        <nav class="top-nav">
+            <a href="/music">Music</a>
+            <a href="/apps">Apps</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+        {{#foreach navigation}}
+            <span class="{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</span>
+        {{/foreach}}
 
         {{! Everything else gets inserted here }}
         {{{body}}}

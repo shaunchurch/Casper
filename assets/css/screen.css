@@ -527,6 +527,21 @@ body.nav-opened .site-wrapper {
 }
 
 /* Navigation */
+
+.top-nav {
+    
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    z-index: 100;    
+}
+
+.top-nav a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
 body.nav-opened .nav-cover {
     position: fixed;
     top: 0;
@@ -786,6 +801,7 @@ body.nav-opened .nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: inline-block;
+    display: none;
     float: right;
     height: 38px;
     padding: 0 15px;
@@ -1618,6 +1634,10 @@ body:not(.post-template) .post-title {
         padding: 15% 0;
     }
 
+    .top-nav {
+        display: none;
+    }
+
     .scroll-down,
     .home-template .main-header:after { display: none; }
 
@@ -1731,6 +1751,10 @@ body:not(.post-template) .post-title {
     .read-next-story.no-cover + .read-next-story.no-cover {
         border-top: rgba(0,0,100,0.06) 1px solid;
         border-left: none;
+    }
+
+    .menu-button {
+        display: inline-block;
     }
 
 }
